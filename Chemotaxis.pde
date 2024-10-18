@@ -1,19 +1,19 @@
-Walker [] bob;
+Walker [] friend;
 void setup()
 {
   size(500,500);
-   bob = new Walker[30];   
-   for(int i=0; i < bob.length; i++)
-   bob[i] = new Walker();
+   friend = new Walker[30];   
+   for(int i=0; i < friend.length; i++)
+   friend[i] = new Walker();
 }
 void draw()
 {
   background(0);
 
   
-  for(int i=0; i < bob.length; i++){
-    bob[i].walk();
-    bob[i].show();
+  for(int i=0; i < friend.length; i++){
+    friend[i].walk();
+    friend[i].show();
 
    }
 }
@@ -43,9 +43,9 @@ class Walker
   }
   void show()
   {
-    getcolorR = (int)(Math.random()*120)+100;
-    getcolorG = (int)(Math.random()*120)+100;
-    getcolorB = (int)(Math.random()*120)+100;
+    getcolorR = (int)(Math.random()*220)-100;
+    getcolorG = (int)(Math.random()*220)-100;
+    getcolorB = (int)(Math.random()*220)-100;
     fill(getcolorR,getcolorG,getcolorB);
     ellipse(myX,myY,30,30);
   }
