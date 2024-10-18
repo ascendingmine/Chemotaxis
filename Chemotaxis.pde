@@ -2,7 +2,7 @@ Walker [] friend;
 void setup()
 {
   size(500,500);
-   friend = new Walker[30];   
+   friend = new Walker[50];   
    for(int i=0; i < friend.length; i++)
    friend[i] = new Walker();
 }
